@@ -23,8 +23,9 @@ void loop() {   // Se repite infinitamente
   digitalWrite(13, LOW);   // Apagar LED
   delay(1000);             // Esperar 1 segundo
 }
-```
 
+```
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ledparpadeante.png" width="1024" height="550" />
 
 ### Ejercicio n 3: "Control por pulsador"
 ```js
