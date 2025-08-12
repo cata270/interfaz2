@@ -25,6 +25,7 @@ void loop() {   // Se repite infinitamente
 }
 ```
 
+
 ### Ejercicio n 3: "Control por pulsador"
 ```js
 void setup() {
