@@ -41,7 +41,7 @@ void loop() {
   }
 }
 ```
-
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ledpulsador.png" width="1024" height="550" />
 ### Ejercicio n 4: "Led con potenciómetro"
 ```js
 void setup() {
@@ -53,6 +53,7 @@ void loop() {
   analogWrite(9, brillo);               // Ajustar brillo
 }
 ```
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ledpotenciometro.png" width="1024" height="550" />
 ### Ejercicio n 5: "Semaforo Arduino"
 
 ```js
@@ -103,5 +104,6 @@ void loop() {
 
 }
 ```
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/semaforo.png" width="1024" height="550" />
 }
 
