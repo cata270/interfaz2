@@ -61,7 +61,6 @@ void loop() {
 ```js
 // C++ code - Semáforo Autos y Peatones
 
-// Definición de pines
 int LED_1 = 6;  // Luz roja autos
 int LED_2 = 7;  // Luz amarilla autos
 int LED_3 = 8;  // Luz verde autos
@@ -100,12 +99,10 @@ void loop() {
 
   // 🚦 Fase 4: Rojo autos, rojo peatones (tiempo intermedio)
   digitalWrite(LED_4, LOW);   // Verde peatones apagado
-  digitalWrite(LED_5, HIGH);  // Rojo peatones encendido
+  digitalWrite(LED_5, HIGH); 
+  digitalWrite(LED_1, LOW);
+  digitalWrite(LED_5, HIGH);
+   digitalWrite(LED_3, HIGH);
+    digitalWrite(LED_5, HIGH); // Rojo peatones encendido
   delay(2000); // 2 segundos
-
-
 }
-```
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/semaforo.png" width="1024" height="550" />
-}
-
