@@ -114,6 +114,7 @@ void loop() {
   delay(2000); // 2 segundos
 }
 // C++ code - Semáforo Autos y Peatones
+```
 
 ### Ejercicio n 6: "Arduino Processing"
 ```js
