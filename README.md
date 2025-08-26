@@ -59,8 +59,6 @@ void loop() {
 ### Ejercicio n 5: "Semaforo Arduino"
 
 ```js
-// C++ code - Semáforo Autos y Peatones
-
 int LED_1 = 6;  // Luz roja autos
 int LED_2 = 7;  // Luz amarilla autos
 int LED_3 = 8;  // Luz verde autos
@@ -95,7 +93,16 @@ void loop() {
   digitalWrite(LED_1, HIGH);  // Rojo autos encendido
   digitalWrite(LED_5, LOW);   // Rojo peatones apagado
   digitalWrite(LED_4, HIGH);  // Verde peatones encendido
-  delay(5000); // 5 segundos
+  delay(1000); // 5 segundos
+   digitalWrite(LED_4, LOW);
+   delay(1000);
+   digitalWrite(LED_4, HIGH);
+  delay(1000);
+     digitalWrite(LED_4, LOW);
+   delay(1000);
+   digitalWrite(LED_4, HIGH);
+  delay(1000);
+   delay(5000);
 
   // 🚦 Fase 4: Rojo autos, rojo peatones (tiempo intermedio)
   digitalWrite(LED_4, LOW);   // Verde peatones apagado
@@ -106,3 +113,5 @@ void loop() {
     digitalWrite(LED_5, HIGH); // Rojo peatones encendido
   delay(2000); // 2 segundos
 }
+// C++ code - Semáforo Autos y Peatones
+
