@@ -186,7 +186,7 @@ void loop() {
   }
 }
 
-PROCESSING: import processing.serial.*;
+PROCESSING:import processing.serial.*;
 
 Serial myPort;
 ArrayList<PVector> circles; 
@@ -207,7 +207,7 @@ void draw() {
   //background(0);
   
   // Dibujar círculos almacenados
-  fill(240, 234, 56);
+  fill(random (0), random (234), random (56));
   //noStroke();
   stroke(255, 0, 0);
   for (PVector c : circles) {
@@ -227,7 +227,7 @@ void draw() {
   }
 }
 ```
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/arduino%20processing.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Captura%20de%20pantalla%202025-09-02%20121901.png" width="1024" height="550" />
 
 
 
