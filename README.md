@@ -164,7 +164,7 @@ void draw()
 }
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/arduino%20processing.png" width="1024" height="550" />
-```
+
 ### Ejercicio n 7 "Arduino + botón + processing"
 
 ```js
@@ -227,6 +227,8 @@ void draw() {
   }
 }
 ```
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/arduino%20processing.png" width="1024" height="550" />
+
 
 
 
