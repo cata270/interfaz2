@@ -307,6 +307,7 @@ class CircleData {
     this.size = size;
   }
 }
+
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Bot%C3%B3n%20%2B%20potenciometro.png" width="1024" height="550" />
 
