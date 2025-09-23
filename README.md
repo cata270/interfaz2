@@ -312,7 +312,7 @@ class CircleData {
 
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Bot%C3%B3n%20%2B%20potenciometro.png" width="1024" height="550" /> 
 
-### Ejercicio n 1: "Hola mundo"
+### Ejercicio n 9: "Hola mundo"
 
 // --- Configuración de botones ---
 const int numButtons = 3;
@@ -381,7 +381,9 @@ void loop() {
 
   delay(10);
 }
+
 ```
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Bot%C3%B3n%20%2B%20potenciometro.png" width="1024" height="550" /> 
+
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/botonera%20arduino.png" width="1024" height="550" />
 
 
