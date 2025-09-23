@@ -312,5 +312,76 @@ class CircleData {
 
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Bot%C3%B3n%20%2B%20potenciometro.png" width="1024" height="550" /> 
 
+### Ejercicio n 1: "Hola mundo"
+
+// --- Configuración de botones ---
+const int numButtons = 3;
+const int buttonPins[numButtons] = {2, 4, 7};
+const int ledButtonPins[numButtons] = {9, 10, 11}; // LEDs botones
+
+// --- Configuración de potenciómetros ---
+const int numPots = 2;
+const int potPins[numPots] = {A0, A1};
+const int ledPotPins[numPots] = {3, 5}; // LEDs PWM
+
+// Variables de estados previos
+int lastButtonState[numButtons];
+int lastPotValue[numPots];
+
+void setup() {
+  Serial.begin(9600);
+
+  // Configurar botones y LEDs
+  for (int i = 0; i < numButtons; i++) {
+    pinMode(buttonPins[i], INPUT_PULLUP);
+    pinMode(ledButtonPins[i], OUTPUT);
+    lastButtonState[i] = digitalRead(buttonPins[i]);
+  }
+
+  // Configurar LEDs de potenciómetros
+  for (int i = 0; i < numPots; i++) {
+    pinMode(ledPotPins[i], OUTPUT);
+    lastPotValue[i] = analogRead(potPins[i]);
+  }
+}
+
+void loop() {
+  // Leer y enviar botones
+  for (int i = 0; i < numButtons; i++) {
+    int buttonState = digitalRead(buttonPins[i]);
+
+    // LED se enciende cuando botón está presionado
+    digitalWrite(ledButtonPins[i], buttonState == LOW ? HIGH : LOW);
+
+    if (buttonState != lastButtonState[i]) {  // enviar cambios
+      Serial.print("B");
+      Serial.print(i); 
+      Serial.print(":");
+      Serial.println(buttonState);
+      lastButtonState[i] = buttonState;
+    }
+  }
+
+  // Leer y enviar potenciómetros
+  for (int i = 0; i < numPots; i++) {
+    int potValue = analogRead(potPins[i]); // 0–1023
+    int pwmValue = potValue / 4;           // 0–255
+
+    // Ajustar LED según valor
+    analogWrite(ledPotPins[i], pwmValue);
+
+    if (abs(pwmValue - lastPotValue[i]) > 2) { // evitar ruido
+      Serial.print("P");
+      Serial.print(i);
+      Serial.print(":");
+      Serial.println(pwmValue);
+      lastPotValue[i] = pwmValue;
+    }
+  }
+
+  delay(10);
+}
+```
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Bot%C3%B3n%20%2B%20potenciometro.png" width="1024" height="550" /> 
 
 
