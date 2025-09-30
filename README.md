@@ -117,7 +117,7 @@ void loop() {
 }
 // C++ code - Semáforo Autos y Peatones
 ```
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ledparpadeante.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/semaforo.png" width="1024" height="550" />
 
 ### Ejercicio n 6: "Arduino Processing"
 ```js
