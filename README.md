@@ -313,8 +313,11 @@ class CircleData {
 ```
 
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Bot%C3%B3n%20%2B%20potenciometro.png" width="1024" height="550" /> 
+
 ### Ejercicio n 9: "Función If + else"
+
 ```js
+
 int leds[] = {2, 3, 4, 5}; // Creamos un arreglo con los pines donde van conectados los LEDs
 
 void setup() {
@@ -335,6 +338,7 @@ void loop() {
     delay(500);                         // Espera 0,5 segundos antes de pasar al siguiente
   }
 }
+
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/if%20else.png" width="1024" height="550" /> 
 
