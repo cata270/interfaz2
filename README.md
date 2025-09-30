@@ -336,7 +336,7 @@ void loop() {
   }
 }
 ```
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Bot%C3%B3n%20%2B%20potenciometro.png" width="1024" height="550" /> 
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/if%20else.png" width="1024" height="550" /> 
 
 ### Ejercicio n 10: "Botonera arduino + processing"
 
