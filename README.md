@@ -124,7 +124,22 @@ void loop() {
 
 ### Ejercicio n 6: "Potenciómetro + Processing"
 ```js
-import processing.serial.*;
+
+ARDUINO: unsigned int ADCValue;
+void setup(){
+    Serial.begin(9600);
+}
+
+void loop(){
+
+ int val = analogRead(0);
+   val = map(val, 0, 300, 0, 255);
+    Serial.println(val);
+delay(50);
+}
+
+
+processing:import processing.serial.*;
 
 Serial myPort;  // Crear objeto de la clase Serial
 static String val;    // Datos recibidos desde el puerto serial
