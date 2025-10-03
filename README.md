@@ -28,7 +28,7 @@ void loop() {   // Se repite infinitamente
 
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ledparpadeante.png" width="1024" height="550" />
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/led%20parpadeante%20foto.jpg" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/led%20parpadeante%20real.jpg" width="1024" height="550" />
 
 ### Ejercicio n 3: "Control por pulsador"
 ```js
@@ -170,7 +170,7 @@ void draw()
 }
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/arduino%20processing.png" width="1024" height="550" />
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ledparpadeante.png" width="1024" height="550" />
+
 
 ### Ejercicio n 7 "Arduino + botón + processing"
 
@@ -235,6 +235,7 @@ void draw() {
 }
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/Captura%20de%20pantalla%202025-09-02%20121901.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/pulsador%20foto.jpg" width="1024" height="550" />
 
 ### Ejercicio 8 "Arduino +botón + potenciometro + processing"
 ``` js
@@ -503,5 +504,5 @@ void playTrack(int index) {
 ```
 
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/botonera%20arduino.png" width="1024" height="550" />
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ledparpadeante.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ej%2010.jpg" width="1024" height="550" />
 
