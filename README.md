@@ -367,6 +367,8 @@ void loop() {
 
 ```js
 
+En este cógido lo que ocurre es la interacción del potenciometro a través de Arduino + Procesing, generando así una imagen interactiva, mi intervención aparece en el código de processing, donde modifiqué el color del fondo
+
 CODIGO ARDUINO:
 // --- Configuración de botones ---
 const int numButtons = 3;
@@ -629,5 +631,6 @@ void draw()
 
 ```
 
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ej%2010.jpg" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/entrega.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/entrega%20foto.jpg" width="1024" height="650" />
 
