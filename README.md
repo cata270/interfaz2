@@ -526,7 +526,7 @@ void playTrack(int index) {
 ### Ejercicio n 11 (entrega) "Potenciometro + processing intervenido"
 
 ``` js
-
+AAAAAAAAAAAAAAAAAAAAA
 ARDUINO: unsigned int ADCValue;
 void setup() {
   Serial.begin(9600);
