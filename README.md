@@ -365,9 +365,8 @@ void loop() {
 
 ### Ejercicio n 10: "Botonera arduino + processing"
 
-```js
-
 En este cógido lo que ocurre es la interacción del potenciometro a través de Arduino + Procesing, generando así una imagen interactiva, mi intervención aparece en el código de processing, donde modifiqué el color del fondo
+```js
 
 CODIGO ARDUINO:
 // --- Configuración de botones ---
