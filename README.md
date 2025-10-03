@@ -139,7 +139,7 @@ delay(50);
 }
 
 
-processing:import processing.serial.*;
+PROCESSING:import processing.serial.*;
 
 Serial myPort;  // Crear objeto de la clase Serial
 static String val;    // Datos recibidos desde el puerto serial
@@ -519,5 +519,115 @@ void playTrack(int index) {
 ```
 
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/botonera%20arduino.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ej%2010.jpg" width="1024" height="550" />
+
+### Ejercicio n 11 (entrega) "Potenciometro + processing intervenido"
+
+``` js
+
+ARDUINO: unsigned int ADCValue;
+void setup() {
+  Serial.begin(9600);
+  pinMode(9, OUTPUT);  // Pin PWM (símbolo ~)
+}
+void loop() {
+  int val = analogRead(A0);           // Leer potenciómetro (0-1023)
+  int brillo = map(val, 0, 1023, 0, 255);  // Convertir a rango PWM
+  analogWrite(9, brillo);               // Ajustar brillo
+      Serial.println(val);
+delay(50);
+}
+
+PROCESSING: import processing.serial.*;
+
+Serial myPort;  // Crear objeto de la clase Serial
+static String val;    // Datos recibidos desde el puerto serial
+int sensorVal = 0;
+
+void setup()
+{
+  background(103,20,23);
+  //fullScreen(P3D);
+   size(1080, 720);
+   noStroke();
+  noFill();
+  String portName = "COM3";// Cambia el número (en este caso) para que coincida con el puerto correspondiente conectado a tu Arduino.
+
+  //myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  myPort = new Serial(this, Serial.list()[0], 9600);
+
+}
+
+void draw()
+{
+  if ( myPort.available() > 0) {  // Si hay datos disponibles,
+  val = myPort.readStringUntil('\n');
+  try {
+   sensorVal = Integer.valueOf(val.trim());
+  }
+  catch(Exception e) {
+  ;
+  }
+  println(sensorVal); // léelos y guárdalos en vals!
+  }  
+ //background(255,165,165);
+  // Escala el valor de mouseX de 0 a 640 a un rango entre 0 y 175
+  float c = map(sensorVal, 0, width, 0, 420);
+  // Escala el valor de mouseX de 0 a 640 a un rango entre 40 y 300
+  float d = map(sensorVal, 0, width, 60,500);
+ 
+  fill(255, c, 0);
+  ellipse(width/2, height/1, d, d);  
+ 
+   fill(464,c,78);
+  ellipse(width/4, height/2, 34, 16);
+  fill(244,c,645);
+  ellipse(width/4, height/2, d, d);
+  fill(235,c,568);
+  ellipse(width/4, height/2, d, d);
+ 
+   fill(389,c,389);
+  ellipse(width/1, height/3, d, d);
+ 
+   fill(134,c,0);
+  ellipse(width/2, height/3, 234, 346);
+ 
+  fill(346,c,132);
+  ellipse(width/10, height/12, d, d);
+ 
+  fill(134,c,657);
+  ellipse(width/10, height/12, d, d);
+ 
+    fill(346,c,132);
+  ellipse(width/67, height/34, d, d);
+ 
+  fill(134,c,657);
+  ellipse(width/2, height/12, d, d);
+ 
+  fill(346,c,453);
+  ellipse(width/2, height/2, d, d);
+ 
+  fill(134,c,657);
+  ellipse(width/4, height/1, d, d);
+ 
+   fill(346,c,132);
+  ellipse(width/3, height/3, d, d);
+ 
+  fill(134,c,657);
+  ellipse(width/6, height/6, d, d);
+ 
+   fill(134,c,657);
+  ellipse(width/4, height/1, d, d);
+ 
+   fill(346,c,132);
+  ellipse(width/3, height/15, d, d);
+ 
+  fill(134,c,657);
+  ellipse(width/1060, height/500, d, d);
+
+}
+
+```
+
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/ej%2010.jpg" width="1024" height="550" />
 
