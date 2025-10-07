@@ -526,12 +526,12 @@ void playTrack(int index) {
 ### Ejercicio n 11 (entrega) "Potenciometro + processing intervenido"
 
 ``` js
-En este cógido lo que ocurre es la interacción del potenciometro a través de Arduino + Procesing generando
+En este códido lo que ocurre es la interacción del potenciometro a través de Arduino + Procesing generando
 así una imagen interactiva, primero explicaré lo que ocurre en el circuito físico, el potenciómetro que
 utilicé podía ser conectado directamente al arduino,por lo que debí el cable negro va a tierra, el rojo
  (señal de entrada) a 5v y el azul (señal de salida) A0.
  Mi intervención apareceen el código de processing, donde modifiqué el color del fondo (background) ,añadí
- otra forma geométrica(un ovalo), agregué círculos interactivos: Variando en tamaños (width, height),
+ otra forma geométrica(un óvalo), agregué círculos interactivos: Variando en tamaños (width, height),
  colores (fill) y lugares, también probé superponiendolos para generar un efecto en los colores. En
 este sector "float c = map(sensorVal, 0, width, 0, 420);" fui probando cambiando valores,lo que afectaba
  en el ancho de la separación de los diámetros en la interacción.
