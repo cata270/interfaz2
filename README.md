@@ -641,6 +641,33 @@ void draw()
 
 }
 
+¿Cómo funciona?
+analogRead(A0): Lee el valor de un potenciómetro o sensor analógico, el resultado es un entero entre 0 y 1023.
+gWrite(9, brillo): Modula la salida PWM del pin 9 para cambiar el brillo de un LED.
+
+
+Serial.println(val): Envía el valor leído a través del puerto serial para que el ordenador lo reciba.
+
+
+delay(50): Espera 50 milisegundos para evitar enviar demasiados datos muy rápido.
+
+
+
+
+  map: toma el valor sensorVal que está en el rango [0, width] y lo                   transforma al rango [0, 420].
+
+
+   float c: almacena ese resultado como un número decimal.
+ 
+El valor que envía el Arduino (que depende de cuánto gira el potenciómetro) se guarda en sensorVal.
+
+
+
+
+
+
+
+
 ```
 
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/entrega.png" width="1024" height="550" />
