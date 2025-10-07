@@ -537,6 +537,8 @@ este sector "float c = map(sensorVal, 0, width, 0, 420);" fui probando cambiando
  en el ancho de la separación de los diámetros en la interacción.
 
 
+
+
 ARDUINO: unsigned int ADCValue;
 void setup() {
   Serial.begin(9600);
