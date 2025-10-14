@@ -2,7 +2,7 @@
 
 1.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
 2.[Led intermitente](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-2-led-intermitente) <br>
-3.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
+3.[Control por pulsador](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-3-control-por-pulsador) <br>
 4.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
 5.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
 6.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
