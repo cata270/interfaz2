@@ -3,16 +3,16 @@
 1.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
 2.[Led intermitente](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-2-led-intermitente) <br>
 3.[Control por pulsador](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-3-control-por-pulsador) <br>
-4.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-5.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-6.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-7.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-8.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-9.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-10.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-11.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-12.[Hola mundo](https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-1-hola-mundo) <br>
-https://github.com/cata270/interfaz2?tab=readme-ov-file#ejercicio-n-2-led-intermitente
+4.[Led con potenciómetro](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-4-led-con-potenci%C3%B3metro) <br>
+5.[Semáforo Arduino](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-5-semaforo-arduino) <br>
+6.[Potenciómetro + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-6-potenci%C3%B3metro--processing) <br>
+7.[Arduino + botón + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-7-arduino--bot%C3%B3n--processing) <br>
+8.[Arduino + botón + potenciómetro + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-8-arduino-bot%C3%B3n--potenciometro--processing) <br>
+9.[Fución if - else](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-9-funci%C3%B3n-if--else) <br>
+10.[Botonera arduino + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-10-botonera-arduino--processing) <br>
+11.[Enytega (potenciometro + processing)](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-11-entrega-potenciometro--processing-intervenido) <br>
+
+
 ### Ejercicio n 1: "Hola mundo"
 
 ```js
