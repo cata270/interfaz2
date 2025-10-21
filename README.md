@@ -795,7 +795,7 @@ void draw() {
 
 
 ### Ejercicio n 13: "Promedio de imagenes"
-
+```js
 CODIGO ARDUINO:
 void setup() {
   Serial.begin(9600);
