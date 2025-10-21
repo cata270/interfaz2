@@ -786,5 +786,9 @@ void draw() {
     }
   }
 }
+
 ```
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/cuerpo%20video%20sensor%20fisico.jpeg" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/cuerpo%20video%20sentor%20ss.png" width="1024" height="550" />
+
 
