@@ -10,8 +10,9 @@
 8.[Arduino + botón + potenciómetro + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-8-arduino-bot%C3%B3n--potenciometro--processing) <br>
 9.[Fución if - else](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-9-funci%C3%B3n-if--else) <br>
 10.[Botonera arduino + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-10-botonera-arduino--processing) <br>
-11.[Enytega (potenciometro + processing)](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-11-entrega-potenciometro--processing-intervenido) <br>
-
+11.[Entrega (potenciometro + processing)](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-11-entrega-potenciometro--processing-intervenido) <br>
+12.[Video,cuerpo,sensor](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-cuerpo-video-sensor-sharp) <br>
+13.[Promedio imagenes](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-13-promedio-de-imagenes) <br>
 
 ### Ejercicio n 1: "Hola mundo"
 
