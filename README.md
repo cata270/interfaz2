@@ -875,3 +875,58 @@ void calcAverage(float t) {
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/promedio%20imagenes%20real.jpg" width="1024" height="550" />
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/promedio%20imagenes%20ss.png" width="1024" height="550" />
+
+### Segunda entrega, cuerpo, video, sensor sharp modificado
+
+```js
+
+CODIGO ARDUINO
+// --- Sensor Sharp conectado al pin A0 ---
+int sensorPin = A0;
+int valor;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  valor = analogRead(sensorPin);
+  Serial.println(valor);
+  delay(50); // envío cada 50 ms
+}
+
+
+
+CODIGO PROCESSING
+// --- Librerías necesarias ---
+import processing.serial.*;
+import processing.video.*;
+
+// --- Variables de cámara y serial ---
+Capture cam;
+Serial myPort;
+
+// --- Variables del sensor ---
+float sensorValue = 0;
+float suavizado = 0;
+
+// --- Parámetros para detección de silueta ---
+float umbral = 100;
+String simbolos = "@#%*+=-:. ";
+
+PGraphics buffer; // para dibujar la cámara una vez
+
+void setup() {
+  size(1280, 720);
+  background(0);
+  textAlign(CENTER, CENTER);
+  textSize(8);
+  colorMode(HSB, 255);
+  
+  // --- Inicializar cámara ---
+
+```
+
+
+
+
