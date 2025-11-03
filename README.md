@@ -11,8 +11,10 @@
 9.[Fución if - else](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-9-funci%C3%B3n-if--else) <br>
 10.[Botonera arduino + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-10-botonera-arduino--processing) <br>
 11.[Entrega (potenciometro + processing)](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-11-entrega-potenciometro--processing-intervenido) <br>
-12.[Video,cuerpo,sensor](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-cuerpo-video-sensor-sharp) <br>
-13.[Promedio imagenes](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-13-promedio-de-imagenes) <br>
+13.[Sensor Sharp](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-cuerpo-video-sensor-sharp) <br>
+13.[Sensor humedad](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-13-promedio-de-imagenes) <br>
+14.[Video,cuerpo,sensor](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-cuerpo-video-sensor-sharp) <br>
+15.[Promedio imagenes](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-13-promedio-de-imagenes) <br>
 
 ### Ejercicio n 1: "Hola mundo"
 
@@ -688,7 +690,92 @@ El valor que envía el Arduino (que depende de cuánto gira el potenciómetro) s
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/entrega%20foto.jpg" width="1024" height="650" />
 
 
-### Ejercicio n 12: "Cuerpo, video, sensor sharp"
+### Ejercicio n 12: "Sensor sharp"
+
+```js
+
+CODIGO ARDUINO
+// Definir el pin del sensor Sharp
+int sharpPin = A0;
+
+void setup() {
+  Serial.begin(9600); // Iniciar comunicación serial
+}
+
+void loop() {
+  int sensorValue = analogRead(sharpPin); // Leer valor del sensor
+  Serial.println(sensorValue); // Enviar valor a Processing
+  delay(100); // Esperar un momento
+}
+
+CODIGO PROCESSING
+import processing.serial.*;
+
+Serial myPort;  // Create object from Serial class
+static String val;    // Data received from the serial port
+int sensorVal = 0;
+
+void setup()
+{
+  background(0); 
+  //fullScreen(P3D);
+   size(1080, 720);
+   noStroke();
+  noFill();
+  String portName = "COM5";// Change the number (in this case ) to match the corresponding port number connected to your Arduino. 
+
+  myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+}
+
+void draw()
+{
+  if ( myPort.available() > 0) {  // If data is available,
+  val = myPort.readStringUntil('\n'); 
+  try {
+   sensorVal = Integer.valueOf(val.trim());
+  }
+  catch(Exception e) {
+  ;
+  }
+  println(sensorVal); // read it and store it in vals!
+  }  
+ //background(0);
+  // Scale the mouseX value from 0 to 640 to a range between 0 and 175
+  float c = map(sensorVal, 0, width, 0, 400);
+  // Scale the mouseX value from 0 to 640 to a range between 40 and 300
+  float d = map(sensorVal, 0, width, 40,500);
+  fill(255, c, 0);
+  ellipse(width/2, height/2, d, d);   
+
+}
+
+```
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/SENSOR%20SHARP.jpeg" width="1024" height="550" />
+
+## Ejercicio 13 : "Sensor humedad"
+
+```js
+
+CODIGO ARDUINO
+void setup()
+{
+  Serial.begin(9600);// abre el puerto serial y Establece la velocidad en baudios a 9600 bps
+}
+void loop()
+{
+  int sensorValue;
+  sensorValue = analogRead(0);   //conectar el sensor de humedad al pin analogo 0
+  Serial.println(sensorValue); //imprime el valor a serial.
+  delay(200);
+}
+
+```
+
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/SENSOR%20HUMEDAD.jpeg" width="1024" height="550" />
+
+
+
+### Ejercicio n 14: "Cuerpo, video, sensor sharp"
 ```js
 CODIGO ARDUINO:
 // --- Sensor Sharp conectado al pin A0 ---
@@ -795,7 +882,7 @@ void draw() {
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/cuerpo%20video%20sentor%20ss.png" width="1024" height="550" />
 
 
-### Ejercicio n 13: "Promedio de imagenes"
+### Ejercicio n 15: "Promedio de imagenes"
 ```js
 CODIGO ARDUINO:
 void setup() {
