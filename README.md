@@ -927,7 +927,9 @@ void setup() {
 
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/camaragrupo.png" width="1024" height="550" />
-<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/promedio%20imagenes%20ss.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/camaragrupo3.png" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/camaragrupo2.png" width="1024" height="550" />
+
 
 
 
