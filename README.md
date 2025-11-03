@@ -13,8 +13,10 @@
 11.[Entrega (potenciometro + processing)](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-11-entrega-potenciometro--processing-intervenido) <br>
 13.[Sensor Sharp](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-sensor-sharp) <br>
 13.[Sensor humedad](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-13--sensor-humedad) <br>
-14.[Video,cuerpo,sensor](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-cuerpo-video-sensor-sharp) <br>
-15.[Promedio imagenes](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-13-promedio-de-imagenes) <br>
+14.[Video,cuerpo,sensor](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-14-cuerpo-video-sensor-sharp) <br>
+15.[Promedio imagenes](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-15-promedio-de-imagenes) <br>
+16.[SEGUNDA ENTREGA](https://github.com/cata270/interfaz2/blob/main/README.md#segunda-entrega-cuerpo-video-sensor-sharp-modificado) <br>
+
 
 ### Ejercicio n 1: "Hola mundo"
 
