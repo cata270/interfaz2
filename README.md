@@ -987,6 +987,7 @@ void loop() {
 
 
 CODIGO PROCESSING
+
 // --- Librerías necesarias ---
 import processing.serial.*;
 import processing.video.*;
@@ -1013,6 +1014,87 @@ void setup() {
   colorMode(HSB, 255);
   
   // --- Inicializar cámara ---
+  String[] cameras = Capture.list();
+  if (cameras.length == 0) {
+    println("No se encontró cámara.");
+    exit();
+  } else {
+    println("Cámara encontrada: " + cameras[0]);
+    cam = new Capture(this, cameras[0]);
+    cam.start();
+  }
+  
+  // --- Inicializar puerto serie (Arduino) ---
+  String portName = Serial.list()[0]; 
+  myPort = new Serial(this, portName, 9600);
+
+  buffer = createGraphics(640, 360); // buffer donde dibujamos la cámara procesada
+}
+
+void draw() {
+  background(0);
+  
+  // --- Leer datos del sensor ---
+  while (myPort.available() > 0) {
+    String inString = trim(myPort.readStringUntil('\n'));
+    if (inString != null) {
+      sensorValue = float(inString);
+      suavizado = lerp(suavizado, sensorValue, 0.1);
+    }
+  }
+
+  // --- Mapear valores del sensor ---
+  float escala = map(suavizado, 0, 1023, 1.5, 0.5);  // zoom central
+  float alpha = map(suavizado, 0, 1023, 255, 100);   // opacidad
+  float tonoBase = map(suavizado, 0, 1023, 0, 255);  // tono
+  int repeticiones = int(map(suavizado, 0, 1023, 1, 6)); // número de mosaicos
+
+  // --- Captura de video ---
+  if (cam.available()) cam.read();
+  cam.loadPixels();
+
+  // --- Dibujar una sola vez la cámara al buffer ---
+  buffer.beginDraw();
+  buffer.background(0);
+  buffer.textAlign(CENTER, CENTER);
+  buffer.textSize(8);
+  buffer.colorMode(HSB, 255);
+  
+  buffer.pushMatrix();
+  buffer.translate(buffer.width/2, buffer.height/2);
+  buffer.scale(escala);
+  buffer.translate(-cam.width/2, -cam.height/2);
+
+  for (int y = 0; y < cam.height; y += 4) {
+    for (int x = 0; x < cam.width; x += 4) {
+      int loc = x + y * cam.width;
+      color c = cam.pixels[loc];
+      float brillo = brightness(c);
+      int index = int(map(brillo, 0, 255, 0, simbolos.length() - 1));
+      char simbolo = simbolos.charAt(index);
+      
+      if (brillo < umbral) {
+        float tono = (tonoBase + map(x, 0, cam.width, 0, 60)) % 255;
+        buffer.fill(tono, 255, 255, alpha);
+        buffer.text(simbolo, x, y);
+      }
+    }
+  }
+
+  buffer.popMatrix();
+  buffer.endDraw();
+
+  // --- Dibujar mosaico en pantalla ---
+  float tileW = width / float(repeticiones);
+  float tileH = height / float(repeticiones);
+
+  for (int i = 0; i < repeticiones; i++) {
+    for (int j = 0; j < repeticiones; j++) {
+      image(buffer, i * tileW, j * tileH, tileW, tileH);
+    }
+  }
+}
+
 
 ```
 <img src="https://raw.githubusercontent.com/cata270/interfaz2/refs/heads/main/img/camaragrupo.png" width="1024" height="550" />
