@@ -11,7 +11,7 @@
 9.[Fución if - else](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-9-funci%C3%B3n-if--else) <br>
 10.[Botonera arduino + processing](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-10-botonera-arduino--processing) <br>
 11.[Entrega (potenciometro + processing)](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-11-entrega-potenciometro--processing-intervenido) <br>
-13.[Sensor Sharp](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-sensor-sharp) <br>
+12.[Sensor Sharp](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-12-sensor-sharp) <br>
 13.[Sensor humedad](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-13--sensor-humedad) <br>
 14.[Video,cuerpo,sensor](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-14-cuerpo-video-sensor-sharp) <br>
 15.[Promedio imagenes](https://github.com/cata270/interfaz2/blob/main/README.md#ejercicio-n-15-promedio-de-imagenes) <br>
